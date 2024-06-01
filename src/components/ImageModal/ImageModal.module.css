@@ -1,0 +1,29 @@
+.buttonClose {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: rgba(63, 65, 74, 0.837);
+  border-radius: 50%;
+}
+.icon {
+  fill: aliceblue;
+  width: 20px;
+  height: 20px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.img {
+  display: block;
+}

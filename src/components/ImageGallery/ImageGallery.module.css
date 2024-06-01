@@ -1,0 +1,9 @@
+.wrapperList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.list {
+  list-style-type: none;
+  width: calc((100%-45px) / 4);
+}

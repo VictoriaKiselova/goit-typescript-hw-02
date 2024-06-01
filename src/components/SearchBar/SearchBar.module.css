@@ -1,0 +1,26 @@
+.container {
+  height: 50px;
+  background-color: rgb(85, 85, 212);
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  padding: 7px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+}
+.button {
+  padding: 6px 10px 7px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.icon {
+  fill: gray;
+  width: 16px;
+  height: 16px;
+}
