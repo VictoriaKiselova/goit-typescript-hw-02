@@ -15,9 +15,19 @@ const customStyles = {
   },
 };
 
-export default function ImageModal({ isOpen, close, imageURL }) {
-  let widthModalImg = window.innerWidth * 0.85;
-  let heightModalImg = window.innerHeight * 0.85;
+interface ImageModalProps {
+  isOpen: boolean;
+  close: () => void;
+  imageURL: string;
+}
+
+export default function ImageModal({
+  isOpen,
+  close,
+  imageURL,
+}: ImageModalProps) {
+  let widthModalImg: number = window.innerWidth * 0.85;
+  let heightModalImg: number = window.innerHeight * 0.85;
   return (
     <div>
       <Modal

@@ -1,4 +1,10 @@
 import css from "./ImageCard.module.css";
+import { TypesArticles } from "../App/App.types";
+
+interface ImageCardProps {
+  itemImage: TypesArticles;
+  open: (regular: string) => void;
+}
 
 export default function ImageCard({
   itemImage: {
@@ -7,7 +13,7 @@ export default function ImageCard({
     urls: { small, regular },
   },
   open,
-}) {
+}: ImageCardProps) {
   return (
     <div>
       <img
