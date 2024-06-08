@@ -1,14 +1,15 @@
 .buttonClose {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   padding: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0;
-  background-color: rgba(63, 65, 74, 0.837);
-  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.2),
+    5px 6px 20px 5px rgba(0, 0, 0, 0.2);
 }
 .icon {
   fill: aliceblue;
@@ -25,5 +26,24 @@
   z-index: 1000;
 }
 .img {
+  min-height: 420px;
+  min-width: 320px;
   display: block;
+  object-fit: cover;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .buttonClose {
+    padding: 4px;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttonClose {
+    padding: 5px;
+  }
 }

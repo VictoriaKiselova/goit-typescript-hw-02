@@ -7,6 +7,7 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage.tsx";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn.tsx";
 import ImageModal from "../ImageModal/ImageModal.tsx";
 import { TypesArticles, FetchArticlesResponse } from "./App.types.ts";
+import css from "./App.module.css";
 
 export default function App() {
   const [queryImage, setQueryImage] = useState<string>("");
@@ -68,7 +69,7 @@ export default function App() {
     setSelectedImage("");
   }
   return (
-    <div>
+    <div className={css.container}>
       <SearchBar onSubmit={handleInputChange} />
       {articles !== null && (
         <ImageGallery listImages={articles} open={openModal} />

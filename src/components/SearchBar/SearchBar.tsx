@@ -1,5 +1,5 @@
 import React, { FormEvent } from "react";
-import { ImSearch } from "react-icons/im";
+import { FaSearch } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import css from "./SearchBar.module.css";
 
@@ -25,9 +25,9 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
   return (
     <div className={css.container}>
       <Toaster position="top-right" reverseOrder={false} />
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={css.form}>
         <button type="submit" className={css.button}>
-          <ImSearch className={css.icon} />
+          <FaSearch className={css.icon} />
         </button>
         <input
           type="text"
