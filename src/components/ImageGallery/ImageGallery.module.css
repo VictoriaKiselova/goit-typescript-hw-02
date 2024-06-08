@@ -1,31 +1,9 @@
 .wrapperList {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .list {
   list-style-type: none;
-}
-@media screen and (min-width: 768px) {
-  .wrapperList {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .list {
-    width: calc((100%-30px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .wrapperList {
-    gap: 15px;
-  }
-  .list {
-    width: calc((100%-45px) / 4);
-  }
+  width: calc((100%-45px) / 4);
 }
