@@ -15,3 +15,4 @@ export const fetchArticles = async <T>(
     throw error;
   }
 };
+

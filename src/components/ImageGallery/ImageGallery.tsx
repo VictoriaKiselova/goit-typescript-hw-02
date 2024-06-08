@@ -19,3 +19,4 @@ export default function ImageGallery({ listImages, open }: ImageGalleryProps) {
     </ul>
   );
 }
+

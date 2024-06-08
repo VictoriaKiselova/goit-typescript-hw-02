@@ -14,7 +14,7 @@
   .wrapperList {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 11px;
   }
   .list {
     width: calc((100%-30px) / 2);

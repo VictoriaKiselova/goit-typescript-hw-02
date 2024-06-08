@@ -13,3 +13,4 @@ export default function LoadMoreBtn({ onClick }: LoadMoreBtnProps) {
     </div>
   );
 }
+
