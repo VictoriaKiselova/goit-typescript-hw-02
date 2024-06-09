@@ -25,7 +25,7 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
   return (
     <div className={css.container}>
       <Toaster position="top-right" reverseOrder={false} />
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={css.form}>
         <button type="submit" className={css.button}>
           <ImSearch className={css.icon} />
         </button>
@@ -39,5 +39,3 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
     </div>
   );
 }
-
-

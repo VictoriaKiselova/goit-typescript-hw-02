@@ -7,10 +7,9 @@ interface LoadMoreBtnProps {
 export default function LoadMoreBtn({ onClick }: LoadMoreBtnProps) {
   return (
     <div>
-      <button type="button" onClick={onClick} className={css.button}>
+      <button type="button" onClick={onClick} className={css.glowOnHover}>
         Load more
       </button>
     </div>
   );
 }
-

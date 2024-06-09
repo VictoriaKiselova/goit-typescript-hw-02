@@ -14,4 +14,3 @@ export interface FetchArticlesResponse {
   results: TypesArticles[];
   total_pages: number;
 }
-

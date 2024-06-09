@@ -76,7 +76,7 @@ export default function App() {
       )}
       {isLoading && showBtn && <Loader />}
       {error && <ErrorMessage />}
-      {articles !== null && !isLoading && showBtn && (
+      {articles !== null && articles.length > 0 && !isLoading && showBtn && (
         <LoadMoreBtn onClick={handleLoadMore} />
       )}
       {isOpen && (
@@ -89,4 +89,3 @@ export default function App() {
     </div>
   );
 }
-

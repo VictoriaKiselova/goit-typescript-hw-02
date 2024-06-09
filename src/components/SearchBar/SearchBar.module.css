@@ -1,28 +1,122 @@
 .container {
+  padding: 5px;
   height: 50px;
-  background-color: rgb(85, 85, 212);
+  width: 100%;
+  background-color: rgb(49, 185, 36);
   display: flex;
-  gap: 0;
+  justify-content: center;
+}
+.form {
+  background-color: #fff;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0;
+  border-radius: 5px;
+  padding: 0;
 }
 .input {
   padding: 7px;
+  font-size: 18px;
+  color: #000;
   background-color: #fff;
-  border: 0;
+  border: none;
   border-radius: 0 5px 5px 0;
   outline: none;
 }
-.button {
-  padding: 6px 10px 7px 10px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 0 0 5px;
+.input::placeholder {
+  color: gray;
+  font-style: 16px;
+}
+.button:hover .icon {
+  fill: rgb(49, 185, 36);
 }
 .icon {
   fill: gray;
   width: 22px;
   height: 22px;
+}
+.button {
+  padding: 7px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button:active {
+  color: #000;
+}
+
+.button:active:after {
+  background: transparent;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+.button:focus:not(:active)::before {
+  opacity: 0;
+}
+.button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
