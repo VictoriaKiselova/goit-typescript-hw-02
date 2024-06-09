@@ -71,7 +71,7 @@ export default function App() {
   return (
     <div className={css.container}>
       <SearchBar onSubmit={handleInputChange} />
-      {articles !== null && (
+      {articles !== null && articles.length > 0 && (
         <ImageGallery listImages={articles} open={openModal} />
       )}
       {isLoading && showBtn && <Loader />}

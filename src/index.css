@@ -1,5 +1,26 @@
 :root {
   background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    310deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(87deg 95% 89%) 8%,
+    hsl(89deg 93% 77%) 16%,
+    hsl(90deg 93% 63%) 24%,
+    hsl(77deg 57% 64%) 32%,
+    hsl(1deg 37% 75%) 40%,
+    hsl(306deg 70% 68%) 48%,
+    hsl(292deg 85% 70%) 55%,
+    hsl(269deg 80% 80%) 63%,
+    hsl(211deg 79% 81%) 71%,
+    hsl(185deg 85% 76%) 78%,
+    hsl(185deg 84% 85%) 85%,
+    hsl(185deg 83% 93%) 93%,
+    hsl(0deg 0% 100%) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;

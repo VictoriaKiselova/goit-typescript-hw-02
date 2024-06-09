@@ -3,15 +3,18 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 7px;
   margin: 0;
-  padding: 0;
+  padding: 7px 0;
+  background-color: transparent;
+  border-radius: 5px;
 }
 .list {
   list-style-type: none;
 }
 @media screen and (min-width: 768px) {
   .wrapperList {
+    padding: 11px 5px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 11px;
@@ -23,6 +26,7 @@
 
 @media screen and (min-width: 1200px) {
   .wrapperList {
+    padding: 15px 5px;
     gap: 15px;
   }
   .list {
