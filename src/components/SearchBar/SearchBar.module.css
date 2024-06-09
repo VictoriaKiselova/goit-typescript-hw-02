@@ -1,34 +1,20 @@
 .container {
-  padding: 5px;
   height: 50px;
-  width: 100%;
-  background-color: rgb(49, 185, 36);
+  background-color: rgb(85, 85, 212);
   display: flex;
-  justify-content: center;
-}
-.form {
-  background-color: #fff;
-  display: flex;
+  gap: 0;
   justify-content: center;
   align-items: center;
-  gap: 0;
-  border-radius: 5px;
 }
 .input {
   padding: 7px;
-  font-size: 18px;
-  color: #000;
   background-color: #fff;
-  border: none;
+  border: 0;
   border-radius: 0 5px 5px 0;
   outline: none;
 }
-.input::placeholder {
-  color: gray;
-  font-style: 16px;
-}
 .button {
-  padding: 7px;
+  padding: 6px 10px 7px 10px;
   background-color: #fff;
   border: none;
   border-radius: 5px 0 0 5px;
