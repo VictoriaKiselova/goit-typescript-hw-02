@@ -81,8 +81,8 @@
   border-radius: 10px;
 }
 
-.button:active {
-  color: #000;
+.button:active .icon {
+  fill: #000;
 }
 
 .button:active:after {
@@ -92,7 +92,7 @@
 .button:hover:before {
   opacity: 1;
 }
-.button:focus:not(:active)::before {
+.button:not(:active):before {
   opacity: 0;
 }
 .button:after {
