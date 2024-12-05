@@ -7,13 +7,13 @@ interface ImageCardProps {
 }
 
 export default function ImageCard({
-  itemImage: {
-    id,
-    tags: [{ title }],
-    urls: { small, regular },
-  },
+  itemImage: { id, tags, urls },
   open,
 }: ImageCardProps) {
+  const title =
+    Array.isArray(tags) && tags.length > 0 ? tags[0]?.title : "No title";
+  const { small = "", regular = "" } = urls || {};
+
   return (
     <div>
       <img
